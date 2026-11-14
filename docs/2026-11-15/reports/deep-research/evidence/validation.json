@@ -1,0 +1,42 @@
+{
+  "checked": "2026-11-15",
+  "confirmedBy": "PENDING",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "passedTestFiles": 6,
+      "failedTestFiles": 0
+    },
+    {
+      "command": "cargo test --manifest-path src-tauri/Cargo.toml --locked --offline",
+      "exitCode": 0,
+      "passedTests": 3,
+      "failedTests": 0
+    },
+    {
+      "command": "npm run tauri:build -- --bundles deb",
+      "exitCode": 0,
+      "artifact": "src-tauri/target/release/bundle/deb/VoltTray_1.0.0_amd64.deb",
+      "size": "1.56 MiB",
+      "includesViteBuild": true
+    },
+    {
+      "command": "busctl --user --json=short --timeout=1s --auto-start=no --allow-interactive-authorization=no call org.kairpods /org/kairpods/manager org.kairpods.manager GetDevices",
+      "exitCode": 1,
+      "class": "ENV FAILURE",
+      "error": "Failed to connect to user scope bus via local transport: Operation not permitted"
+    }
+  ],
+  "notRun": [
+    "Native GUI visual check",
+    "Real AirPods integration",
+    "Windows runtime",
+    "Hidden-window notification acceptance",
+    "AppImage packaging"
+  ]
+}

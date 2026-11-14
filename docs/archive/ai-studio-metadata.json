@@ -1,0 +1,6 @@
+{
+  "name": "VoltTray — Peripheral Battery & Power Utility",
+  "description": "Cross-platform Windows and Linux peripheral battery monitor with predictive lifespan estimates, one-click eco optimizations, interrupt-free alerts, and privacy-first analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

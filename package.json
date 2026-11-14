@@ -1,0 +1,43 @@
+{
+  "name": "volttray",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local desktop battery monitor for Windows and Linux",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server/main.ts",
+    "start": "tsx src/server/main.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "node scripts/clean.mjs",
+    "lint": "tsc --noEmit",
+    "test": "node scripts/test.mjs",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "lucide-react": "^0.546.0",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "vite": "^8.3.0",
+    "express": "^4.21.2",
+    "motion": "^12.23.24",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.4.21",
+    "esbuild": "^0.28.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "@types/express": "^4.17.21"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

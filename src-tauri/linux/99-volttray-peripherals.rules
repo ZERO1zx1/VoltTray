@@ -1,0 +1,25 @@
+# Allow non-root local read/write access for wireless peripheral HID++ battery, DPI & RGB reporting
+# Logitech (Unifying / Bolt / Lightspeed)
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", MODE="0660", TAG+="uaccess"
+# Razer
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1532", MODE="0660", TAG+="uaccess"
+# SteelSeries
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1038", MODE="0660", TAG+="uaccess"
+# Keychron
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", MODE="0660", TAG+="uaccess"
+# Corsair
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1b1c", MODE="0660", TAG+="uaccess"
+# Glorious
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="258a", MODE="0660", TAG+="uaccess"
+# HyperX
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0951", MODE="0660", TAG+="uaccess"
+# Pulsar
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3710", MODE="0660", TAG+="uaccess"
+# Wooting
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="31e3", MODE="0660", TAG+="uaccess"
+# ASUS ROG
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="0b05", MODE="0660", TAG+="uaccess"
+# Sony DualSense / DualShock
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="054c", MODE="0660", TAG+="uaccess"
+# Microsoft Xbox Wireless
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="045e", MODE="0660", TAG+="uaccess"

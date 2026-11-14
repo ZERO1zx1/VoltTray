@@ -1,0 +1,138 @@
+{
+  "checked": "2026-11-15",
+  "scope": "Four user-supplied repositories; targeted battery acquisition, identity, UI and notification review, not a complete security audit.",
+  "sources": [
+    {
+      "repo": "lihaoyun6/AirBattery",
+      "commit": "134e02f2861f933b862b2b6a9562a7f55e505e97",
+      "path": "AirBattery/BatteryInfo/BLEBattery.swift",
+      "url": "https://github.com/lihaoyun6/AirBattery/blob/134e02f2861f933b862b2b6a9562a7f55e505e97/AirBattery/BatteryInfo/BLEBattery.swift",
+      "anchors": [
+        {
+          "term": "CoreBluetooth",
+          "line": 86
+        },
+        {
+          "term": "2A19",
+          "line": 199
+        },
+        {
+          "term": "getAirpods",
+          "line": 166
+        }
+      ]
+    },
+    {
+      "repo": "lihaoyun6/AirBattery",
+      "commit": "134e02f2861f933b862b2b6a9562a7f55e505e97",
+      "path": "AirBattery/BatteryInfo/AirBatteryModel.swift",
+      "url": "https://github.com/lihaoyun6/AirBattery/blob/134e02f2861f933b862b2b6a9562a7f55e505e97/AirBattery/BatteryInfo/AirBatteryModel.swift",
+      "anchors": [
+        {
+          "term": "lastUpdate",
+          "line": 34
+        },
+        {
+          "term": "disappearTime",
+          "line": 100
+        }
+      ]
+    },
+    {
+      "repo": "can1357/kAirPods",
+      "commit": "9f22f99eac588229acb720213bc15a858f4c620b",
+      "path": "service/src/airpods/parser.rs",
+      "url": "https://github.com/can1357/kAirPods/blob/9f22f99eac588229acb720213bc15a858f4c620b/service/src/airpods/parser.rs",
+      "anchors": [
+        {
+          "term": "parse_battery_status",
+          "line": 57
+        }
+      ]
+    },
+    {
+      "repo": "can1357/kAirPods",
+      "commit": "9f22f99eac588229acb720213bc15a858f4c620b",
+      "path": "service/src/battery_provider.rs",
+      "url": "https://github.com/can1357/kAirPods/blob/9f22f99eac588229acb720213bc15a858f4c620b/service/src/battery_provider.rs",
+      "anchors": [
+        {
+          "term": "BatteryProvider1",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "repo": "can1357/kAirPods",
+      "commit": "9f22f99eac588229acb720213bc15a858f4c620b",
+      "path": "service/src/dbus.rs",
+      "url": "https://github.com/can1357/kAirPods/blob/9f22f99eac588229acb720213bc15a858f4c620b/service/src/dbus.rs",
+      "anchors": [
+        {
+          "term": "get_devices",
+          "line": 29
+        }
+      ]
+    },
+    {
+      "repo": "gschrader/ubersicht-bluetooth-battery-bar",
+      "commit": "e0767db89b3add17fb8598be7fab169880e60aef",
+      "path": "bluetooth-battery-bar.widget/index.coffee",
+      "url": "https://github.com/gschrader/ubersicht-bluetooth-battery-bar/blob/e0767db89b3add17fb8598be7fab169880e60aef/bluetooth-battery-bar.widget/index.coffee",
+      "anchors": [
+        {
+          "term": "system_profiler",
+          "line": 11
+        },
+        {
+          "term": "refreshFrequency",
+          "line": 14
+        }
+      ]
+    },
+    {
+      "repo": "borferkic/BT-Device-Battery-Info",
+      "commit": "1c45cc977f2e6298b487cdea11cc9826596d2e51",
+      "path": "BTDeviceBatteryInfo/Services/BluetoothService.cs",
+      "url": "https://github.com/borferkic/BT-Device-Battery-Info/blob/1c45cc977f2e6298b487cdea11cc9826596d2e51/BTDeviceBatteryInfo/Services/BluetoothService.cs",
+      "anchors": [
+        {
+          "term": "BatteryValueExpiration",
+          "line": 18
+        },
+        {
+          "term": "ReadGattBatteryAsync",
+          "line": 647
+        },
+        {
+          "term": "IsBatteryCandidateCurrent",
+          "line": 561
+        }
+      ]
+    },
+    {
+      "repo": "borferkic/BT-Device-Battery-Info",
+      "commit": "1c45cc977f2e6298b487cdea11cc9826596d2e51",
+      "path": "BTDeviceBatteryInfo/Services/LowBatteryNotifier.cs",
+      "url": "https://github.com/borferkic/BT-Device-Battery-Info/blob/1c45cc977f2e6298b487cdea11cc9826596d2e51/BTDeviceBatteryInfo/Services/LowBatteryNotifier.cs",
+      "anchors": [
+        {
+          "term": "Evaluate",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "repo": "borferkic/BT-Device-Battery-Info",
+      "commit": "1c45cc977f2e6298b487cdea11cc9826596d2e51",
+      "path": "BTDeviceBatteryInfo/Models/BatteryLevel.cs",
+      "url": "https://github.com/borferkic/BT-Device-Battery-Info/blob/1c45cc977f2e6298b487cdea11cc9826596d2e51/BTDeviceBatteryInfo/Models/BatteryLevel.cs",
+      "anchors": [
+        {
+          "term": "RepresentativePercent",
+          "line": 27
+        }
+      ]
+    }
+  ]
+}
