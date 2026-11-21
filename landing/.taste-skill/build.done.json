@@ -1,0 +1,11 @@
+{
+ "page": "index.html",
+ "url": null,
+ "root": null,
+ "kind": "software",
+ "category": "Windows болон Linux-д зориулсан батарейн трэй апп",
+ "primary": "Эх кодыг үзэх",
+ "rounds": 3,
+ "start": "2026-11-15T14:06:33.931Z",
+ "by": "gate.mjs --start"
+}

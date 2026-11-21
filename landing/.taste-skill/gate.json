@@ -1,0 +1,1137 @@
+{
+ "start": "2026-11-15T14:06:33.931Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-17T06:50:46.832Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 41,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-17T06:56:06.080Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 25,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-17T07:00:29.509Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 25,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "software",
+  "category": "Windows болон Linux-д зориулсан батарейн трэй апп",
+  "primary": "Эх кодыг үзэх",
+  "rounds": 3,
+  "start": "2026-11-15T14:06:33.931Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "e3642b604a2b1ddb:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "e3642b604a2b1ddb",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "flush",
+    "where": "div.wrap > div.faq > div.faq__item:nth-of-type(6) > p \"Эх код GitHub дээр нээлттэй харагдаж бай\"",
+    "msg": "section#faq and footer#close run together: -13px between their content, on one ground",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "flush"
+    ],
+    "wheres": [
+     "div.wrap > div.faq > div.faq__item:nth-of-type(6) > p \"Эх код GitHub дээр нээлттэй харагдаж бай\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "h2#close-h \"Эх кодоос эхэл\"",
+    "msg": "lies over the text \"Эх код GitHub дээр нээлттэй харагдаж бай\" (div.faq__item:nth-of-type(6) > p)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "h2#close-h \"Эх кодоос эхэл\""
+    ]
+   },
+   {
+    "check": "no-visual",
+    "where": "section#steps \"Эх кодоос гурван алхмаар\"",
+    "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "no-visual"
+    ],
+    "wheres": [
+     "section#steps \"Эх кодоос гурван алхмаар\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#faq \"Түгээмэл асуулт\"",
+    "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#faq \"Түгээмэл асуулт\""
+    ]
+   },
+   {
+    "check": "nesting",
+    "where": "div.app-window > div.app-body > div.app-main > div.app-card:nth-of-type(1) \"Утасгүй хулгана\"",
+    "msg": "3 boxes deep: div.app-window > div.app-main > div.app-card:nth-of-type(1) (text in a box in a box)",
+    "fix": "two levels at most: a card holds a lit picture (no lines, dots or plain box behind the UI), the picture holds the UI",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "nesting"
+    ],
+    "wheres": [
+     "div.app-window > div.app-body > div.app-main > div.app-card:nth-of-type(1) \"Утасгүй хулгана\""
+    ]
+   },
+   {
+    "check": "copy-headings",
+    "where": "div.group > div.grid > article.card.card--row:nth-of-type(2) > h3 \"RGB болон унтах горимоор хэмнэнэ\"",
+    "msg": "\"RGB болон унтах горимоор хэмнэнэ\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"AirPods бүрэлдэхүүнийг с\", \"Төхөөрөмжийн уншилт таны\", \"Ажиллуулах эсвэл build х\", \"AirPods яаж харагддаг вэ\")",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "div.group > div.grid > article.card.card--row:nth-of-type(2) > h3 \"RGB болон унтах горимоор хэмнэнэ\""
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "div.wrap > div.grid.grid--top > article.vt-step.span-4:nth-of-type(1) > h3 \"Эх код авах\"",
+    "msg": "h3 headings in 3 sizes, 18px (\"Ашиглалтын цагийг таамаг\") to 28px (x1.56)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "div.wrap > div.grid.grid--top > article.vt-step.span-4:nth-of-type(1) > h3 \"Эх код авах\""
+    ]
+   },
+   {
+    "check": "contrast",
+    "where": "article.card.card--row:nth-of-type(1) > div.panel > div.feature-frag > span.vt-kicker \"УТАСГҮЙ ХУЛГАНА · 72%\"",
+    "msg": "body text over a effect reads at 1.4:1 at its worst tenth (needs 4.5:1) (and 24 more like it: \"Тоглоход\", \"8 цаг\", \"Ажиллахад\", \"25 цаг\", ...)",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "article.card.card--row:nth-of-type(1) > div.panel > div.feature-frag > span.vt-kicker \"УТАСГҮЙ ХУЛГАНА · 72%\""
+    ]
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#alerts / section#features",
+    "msg": "326px between these sections, +75% against the median 186px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-gaps"
+    ],
+    "wheres": [
+     "section#alerts / section#features"
+    ]
+   },
+   {
+    "check": "empty-area",
+    "where": "section#faq \"Түгээмэл асуулт\"",
+    "msg": "52% of the section is empty: 784px of empty rows between its content, 4% beside content that covers under half the container, in its 1620px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "empty-area"
+    ],
+    "wheres": [
+     "section#faq \"Түгээмэл асуулт\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "div.wrap > div.hero-text.grid > div.ly-collage.span-6:nth-of-type(2) > button.ui-pause.loop-pause \"Pause animation\"",
+    "msg": "Tab stop 8, button \"Pause animation\": its focus change is faint: 1.5:1 against the ground, 3:1 needed",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "div.wrap > div.hero-text.grid > div.ly-collage.span-6:nth-of-type(2) > button.ui-pause.loop-pause \"Pause animation\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+    "msg": "the section's content does not fit it: its content is 152px taller than the section (scrollHeight 1952, clientHeight 1800); its lowest content ends 1926px below its top, past 1728px (the section less 72px of bottom padding); 4 parts lie outside the section's box (SR-2)",
+    "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+     "section#faq > div.wrap > div.faq \"Бэлэн суулгагч байгаа юу? Одоогоор бэлэн\"",
+     "section#faq > div.wrap > div.faq > div.faq__item:nth-of-type(6) \"Лицензийн нөхцөл ямар вэ? Эх код GitHub \""
+    ]
+   },
+   {
+    "check": "section-air",
+    "where": "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+    "msg": "screen group 1 of this two-screen section fills 7.2% of a screen: 40% or more (25% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-air"
+    ],
+    "wheres": [
+     "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+    "msg": "the screen at scroll 9000px (stride 10) shows 80px of section 8 and the content of 2 sections, over 24px each beside section 9: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+    "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "section#widget > div.wrap > div.app-window \"VoltTrayДемо Компьютерын батарей82% · цэ\"",
+    "msg": "a band: a box 89% of the section wide on a ground of its own that holds only text: the section's own ground is the band (SR-4)",
+    "fix": "put every block of <main> in a <section>, and give a band its own section instead of a ground inside one",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "section#widget > div.wrap > div.app-window \"VoltTrayДемо Компьютерын батарей82% · цэ\"",
+     "section#widget > div.wrap > div.app-window > div.app-bar \"VoltTrayДемо\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div.wrap > div.app-window > div.app-bar > div:nth-of-type(2) \"VoltTray\"",
+    "msg": "1 text block starts on a left line at x 687, 607px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div.wrap > div.app-window > div.app-bar > div:nth-of-type(2) \"VoltTray\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "div.app-body > div.app-main > div.app-card:nth-of-type(1) > div.app-grid \"Цэнэг72% Эрүүл мэнд92% Тоглоход8 цаг Ажи\"",
+    "msg": "a row of 2 items: its first item starts at 649px, its column's left line at 632px; its last item ends at 1324px, its column's right line at 1341px (2px either way) (SR-7)",
+    "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div.app-body > div.app-main > div.app-card:nth-of-type(1) > div.app-grid \"Цэнэг72% Эрүүл мэнд92% Тоглоход8 цаг Ажи\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "div.wrap > div.app-window > div.app-body > div.app-side \"Компьютерын батарей82% · цэнэглэж байна8\"",
+    "msg": "a row item is cut by a frame round it: 533 x 421px of its 533 x 532px shows (SR-7)",
+    "fix": "show the row item whole: no frame cutting it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div.wrap > div.app-window > div.app-body > div.app-side \"Компьютерын батарей82% · цэнэглэж байна8\""
+    ]
+   },
+   {
+    "check": "row-lines",
+    "where": "div.wrap > div.app-window > div.app-body > div.app-main \"Утасгүй хулганаUSB dongle Цэнэг72% Эрүүл\"",
+    "msg": "a row item is cut by a frame round it: 746 x 421px of its 746 x 532px shows (SR-7)",
+    "fix": "show the row item whole: no frame cutting it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "row-lines"
+    ],
+    "wheres": [
+     "div.wrap > div.app-window > div.app-body > div.app-main \"Утасгүй хулганаUSB dongle Цэнэг72% Эрүүл\""
+    ]
+   },
+   {
+    "check": "button-styles",
+    "where": "(one screen)",
+    "msg": "3 button styles on one screen: soft, fill #c6f19d (\"Эх кодыг үзэх\"); pill, fill #dce3d6 (\"RGB унтраалт +12ц\", in a mock); round, fill #ffffff (\"Чихэвч Bluetooth · 15% 15%\", in a mock); the odd one out: \"Чихэвч Bluetooth · 15% 15%\"",
+    "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "button-styles"
+    ],
+    "wheres": [
+     "(one screen)"
+    ]
+   },
+   {
+    "check": "heading-scale",
+    "where": "h2#widget-h \"Нэг цонхонд: жагсаалт ба дэлгэрэнгүй\"",
+    "msg": "h2 headings in 2 sizes, 22px (\"Нэг ажлыг нэг панелаар х\") to 30px (x1.36)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "heading-scale"
+    ],
+    "wheres": [
+     "h2#widget-h \"Нэг цонхонд: жагсаалт ба дэлгэрэнгүй\""
+    ]
+   },
+   {
+    "check": "contrast",
+    "where": "div.feature-frag > div.cols > div.mini:nth-of-type(1) > small \"Унтах таймер\"",
+    "msg": "body text over a effect reads at 1.2:1 at its worst tenth (needs 4.5:1), on a busy ground (and 1 more like it: \"80% хязгаар\")",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "div.feature-frag > div.cols > div.mini:nth-of-type(1) > small \"Унтах таймер\""
+    ]
+   },
+   {
+    "check": "sparse",
+    "where": "#steps section.section \"Эх кодоос гурван алхмаар Бэлэн с\"",
+    "msg": "its content fills 42% of its screen; merge it or give it its visual (0.55 is the aim)",
+    "fix": "fill the section or make it a screen shorter",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "sparse"
+    ],
+    "wheres": [
+     "#steps section.section \"Эх кодоос гурван алхмаар Бэлэн с\""
+    ]
+   },
+   {
+    "check": "sparse",
+    "where": "#privacy section.section.ground-inverse \"Мэдээлэл машин дотроо үлдэнэ Vol\"",
+    "msg": "its content fills 38% of its screen; merge it or give it its visual (0.55 is the aim)",
+    "fix": "fill the section or make it a screen shorter",
+    "widths": [
+     1440
+    ],
+    "from": "layout",
+    "ids": [
+     "sparse"
+    ],
+    "wheres": [
+     "#privacy section.section.ground-inverse \"Мэдээлэл машин дотроо үлдэнэ Vol\""
+    ]
+   },
+   {
+    "check": "hero-lines",
+    "where": "section.hero h1",
+    "msg": "the check fills the h1 to 34 characters (this hero's maxChars in heroes.json), not the page's own: it takes 4 lines at 1440, 3 at most",
+    "fix": "the check fills the h1 to this hero's maxChars, not your own: take the next type pairing the deal printed (start.mjs); when the h1 is final and fits, waive it (target: section.hero h1)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "hero-lines"
+    ],
+    "wheres": [
+     "section.hero h1"
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "flush",
+    "where": "section#privacy > div.mo-io__stage > div.mo-io__cover",
+    "msg": "its first line sits 17px under the top edge of section#privacy, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "h2#local-h \"Төхөөрөмжийн уншилт таны компьютер дээр \"",
+    "msg": "starts \"color\" (0.2 s) the moment it is scrolled into view (an IntersectionObserver) on span.mo-w:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#features \"Нэг ажлыг нэг панелаар харуулна\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "contrast",
+    "where": "article.card.card--row:nth-of-type(2) > div.panel > div.feature-frag > div.big \"+12ц\"",
+    "msg": "large text over a effect reads at 1.7:1 at its worst tenth (needs 3:1) (and 1 more like it: \"92%\")",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "text-contrast",
+    "where": "div.wrap > div.app-window > div.app-bar > div:nth-of-type(2) \"VoltTray\"",
+    "msg": "20 lines of text in drawn mocks read under 4.5:1 (2 colour pairs), the worst \"VoltTray\" in #262d24 on #0f1f10 at 1.21:1",
+    "fix": "lift the mocks' muted text (labels, meta, initials) to 4.5:1 on their own panel, or set it larger",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#steps / section#privacy",
+    "msg": "416px between these sections, +28% against the median 326px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#faq / footer#close",
+    "msg": "the sections overlap by 13px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#privacy / section#faq",
+    "msg": "uneven space at the edge of a band: 113px outside its edge, 256px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-3:nth-of-type(2) > a:nth-of-type(1) \"AirPods ба kAirPodsLinux дээрх бүрэлдэхү\"",
+    "msg": "\"AirPods ба kAirPodsLinux дээрх бүрэлдэхү\" opens a section headed \"Нэг ажлыг нэг панелаар харуулна\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "div.nav__menu > div.wrap.grid > div.menu-col.span-3:nth-of-type(2) > a:nth-of-type(2) \"Эх кодоос ажиллуулахgit clone, npm ci, t\"",
+    "msg": "\"Эх кодоос ажиллуулахgit clone, npm ci, t\" opens a section headed \"Эх кодоос гурван алхмаар\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "h1#hero-h \"VoltTray — Windows, Linux трэй апп\"",
+    "msg": "a headline of 5 words on 4 lines at 52px: a paragraph set in display type",
+    "fix": "cut the heading to one short line (2 to 12 words) and move the rest into the text under it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.nav",
+    "msg": "the nav stays on screen with 4 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "progress-bar",
+    "where": "div.ly-collage__set:nth-of-type(1) > div.ly-piece.vt-piece:nth-of-type(2) > div.vt-ui.vt-ui--tight > div.vt-meter \"ТӨЛӨВ 1000 Hz Утасгүй хулгана 72%\"",
+    "msg": "a progress or meter bar on the page, like the one in \"ТӨЛӨВ 1000 Hz Утасгүй хулгана \": the house rules have no drag or progress bars",
+    "fix": "show the figure in words or as a number (\"2 of 5 done\"), not as a bar that fills",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#steps \"Эх кодоос гурван алхмаар\"",
+    "msg": "42% of the section is empty: 304px under its last (div.vt-term), in its 720px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "skip-link",
+    "where": "header.nav > div.wrap.nav__bar > a.skip-link:nth-of-type(1) \"Агуулга руу очих\"",
+    "msg": "the first Tab stop is \"Агуулга руу очих\", not a skip link: a keyboard user tabs through the whole nav on every visit",
+    "fix": "add the starter's skip link as the header's first child: <a class=\"skip-link\" href=\"#top\">Skip to content</a>",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "share-meta",
+    "where": "head",
+    "msg": "the head lacks an icon: a shared link shows no picture or title of its own",
+    "fix": "copy the head block of starter.html: og tags, twitter:card, the icon and theme-color (references/system.md, Head)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"эх кодыг үзэх\"",
+    "msg": "\"эх кодыг үзэх\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-air",
+    "where": "section#steps \"Эх кодоос гурван алхмаар Бэлэн суулгагч \"",
+    "msg": "the content fills 43% of the section's height (388 of 900px): 55% or more (40% WARN) (SR-3)",
+    "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cut-text",
+    "where": "div.frame.alert-frame > div.alert-layout > div.vt-toast > h4 \"Чихэвч цэнэг бага\"",
+    "msg": "cut 11px at the right by the overflow of section#alerts > div.wrap > div.frame.alert-frame: a fragment run out through its panel's edge (and 1 more like it: \"Алгасах\")",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#widget \"Нэг цонхонд: жагсаалт ба дэлгэрэнгүй\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "body-size",
+    "where": "div.wrap > div.faq > div.faq__item:nth-of-type(1) > p \"Одоогоор бэлэн суулгагч нийтлэгдээгүй. Э\"",
+    "msg": "6 of 11 paragraphs of running text are set under 16px (13px)",
+    "fix": "set running text at 16px or more",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "empty-area",
+    "where": "section#faq \"Түгээмэл асуулт\"",
+    "msg": "49% of the section is empty: 752px of empty rows between its content, in its 1544px of rows (WARN over 35%, FAIL over 50%)",
+    "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-stat-strip",
+    "msg": "stat strip x1",
+    "fix": "a strip only of figures the brief gives (a price, hours, a count); otherwise put each number in the sentence it proves, or leave it out (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "copy x1: \"1 / 2 / 3\"",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 144,
+   "layout": 5
+  }
+ },
+ "open": [
+  {
+   "check": "flush",
+   "where": "div.wrap > div.faq > div.faq__item:nth-of-type(6) > p \"Эх код GitHub дээр нээлттэй харагдаж бай\"",
+   "msg": "section#faq and footer#close run together: -13px between their content, on one ground",
+   "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "flush"
+   ],
+   "wheres": [
+    "div.wrap > div.faq > div.faq__item:nth-of-type(6) > p \"Эх код GitHub дээр нээлттэй харагдаж бай\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "h2#close-h \"Эх кодоос эхэл\"",
+   "msg": "lies over the text \"Эх код GitHub дээр нээлттэй харагдаж бай\" (div.faq__item:nth-of-type(6) > p)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "h2#close-h \"Эх кодоос эхэл\""
+   ]
+  },
+  {
+   "check": "no-visual",
+   "where": "section#steps \"Эх кодоос гурван алхмаар\"",
+   "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+   "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "no-visual"
+   ],
+   "wheres": [
+    "section#steps \"Эх кодоос гурван алхмаар\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#faq \"Түгээмэл асуулт\"",
+   "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#faq \"Түгээмэл асуулт\""
+   ]
+  },
+  {
+   "check": "nesting",
+   "where": "div.app-window > div.app-body > div.app-main > div.app-card:nth-of-type(1) \"Утасгүй хулгана\"",
+   "msg": "3 boxes deep: div.app-window > div.app-main > div.app-card:nth-of-type(1) (text in a box in a box)",
+   "fix": "two levels at most: a card holds a lit picture (no lines, dots or plain box behind the UI), the picture holds the UI",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "nesting"
+   ],
+   "wheres": [
+    "div.app-window > div.app-body > div.app-main > div.app-card:nth-of-type(1) \"Утасгүй хулгана\""
+   ]
+  },
+  {
+   "check": "copy-headings",
+   "where": "div.group > div.grid > article.card.card--row:nth-of-type(2) > h3 \"RGB болон унтах горимоор хэмнэнэ\"",
+   "msg": "\"RGB болон унтах горимоор хэмнэнэ\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"AirPods бүрэлдэхүүнийг с\", \"Төхөөрөмжийн уншилт таны\", \"Ажиллуулах эсвэл build х\", \"AirPods яаж харагддаг вэ\")",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "div.group > div.grid > article.card.card--row:nth-of-type(2) > h3 \"RGB болон унтах горимоор хэмнэнэ\""
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "div.wrap > div.grid.grid--top > article.vt-step.span-4:nth-of-type(1) > h3 \"Эх код авах\"",
+   "msg": "h3 headings in 3 sizes, 18px (\"Ашиглалтын цагийг таамаг\") to 28px (x1.56)",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "div.wrap > div.grid.grid--top > article.vt-step.span-4:nth-of-type(1) > h3 \"Эх код авах\""
+   ]
+  },
+  {
+   "check": "contrast",
+   "where": "article.card.card--row:nth-of-type(1) > div.panel > div.feature-frag > span.vt-kicker \"УТАСГҮЙ ХУЛГАНА · 72%\"",
+   "msg": "body text over a effect reads at 1.4:1 at its worst tenth (needs 4.5:1) (and 24 more like it: \"Тоглоход\", \"8 цаг\", \"Ажиллахад\", \"25 цаг\", ...)",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "article.card.card--row:nth-of-type(1) > div.panel > div.feature-frag > span.vt-kicker \"УТАСГҮЙ ХУЛГАНА · 72%\""
+   ]
+  },
+  {
+   "check": "section-gaps",
+   "where": "section#alerts / section#features",
+   "msg": "326px between these sections, +75% against the median 186px",
+   "fix": "use one gap between sections (all within 25% of each other)",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-gaps"
+   ],
+   "wheres": [
+    "section#alerts / section#features"
+   ]
+  },
+  {
+   "check": "empty-area",
+   "where": "section#faq \"Түгээмэл асуулт\"",
+   "msg": "52% of the section is empty: 784px of empty rows between its content, 4% beside content that covers under half the container, in its 1620px of rows (WARN over 35%, FAIL over 50%)",
+   "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "empty-area"
+   ],
+   "wheres": [
+    "section#faq \"Түгээмэл асуулт\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "div.wrap > div.hero-text.grid > div.ly-collage.span-6:nth-of-type(2) > button.ui-pause.loop-pause \"Pause animation\"",
+   "msg": "Tab stop 8, button \"Pause animation\": its focus change is faint: 1.5:1 against the ground, 3:1 needed",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "div.wrap > div.hero-text.grid > div.ly-collage.span-6:nth-of-type(2) > button.ui-pause.loop-pause \"Pause animation\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+   "msg": "the section's content does not fit it: its content is 152px taller than the section (scrollHeight 1952, clientHeight 1800); its lowest content ends 1926px below its top, past 1728px (the section less 72px of bottom padding); 4 parts lie outside the section's box (SR-2)",
+   "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+    "section#faq > div.wrap > div.faq \"Бэлэн суулгагч байгаа юу? Одоогоор бэлэн\"",
+    "section#faq > div.wrap > div.faq > div.faq__item:nth-of-type(6) \"Лицензийн нөхцөл ямар вэ? Эх код GitHub \""
+   ]
+  },
+  {
+   "check": "section-air",
+   "where": "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+   "msg": "screen group 1 of this two-screen section fills 7.2% of a screen: 40% or more (25% WARN) (SR-3)",
+   "fix": "fill the section to 55%: more content, a picture or a background layer, or merge it into the section above as its last block",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-air"
+   ],
+   "wheres": [
+    "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\"",
+   "msg": "the screen at scroll 9000px (stride 10) shows 80px of section 8 and the content of 2 sections, over 24px each beside section 9: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+   "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "section#faq \"Түгээмэл асуулт Бэлэн суулгагч байгаа юу\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "section#widget > div.wrap > div.app-window \"VoltTrayДемо Компьютерын батарей82% · цэ\"",
+   "msg": "a band: a box 89% of the section wide on a ground of its own that holds only text: the section's own ground is the band (SR-4)",
+   "fix": "put every block of <main> in a <section>, and give a band its own section instead of a ground inside one",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "section#widget > div.wrap > div.app-window \"VoltTrayДемо Компьютерын батарей82% · цэ\"",
+    "section#widget > div.wrap > div.app-window > div.app-bar \"VoltTrayДемо\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div.wrap > div.app-window > div.app-bar > div:nth-of-type(2) \"VoltTray\"",
+   "msg": "1 text block starts on a left line at x 687, 607px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div.wrap > div.app-window > div.app-bar > div:nth-of-type(2) \"VoltTray\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "div.app-body > div.app-main > div.app-card:nth-of-type(1) > div.app-grid \"Цэнэг72% Эрүүл мэнд92% Тоглоход8 цаг Ажи\"",
+   "msg": "a row of 2 items: its first item starts at 649px, its column's left line at 632px; its last item ends at 1324px, its column's right line at 1341px (2px either way) (SR-7)",
+   "fix": "start the row's first item on the container's left line and end its last on the right line, every item one height",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div.app-body > div.app-main > div.app-card:nth-of-type(1) > div.app-grid \"Цэнэг72% Эрүүл мэнд92% Тоглоход8 цаг Ажи\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "div.wrap > div.app-window > div.app-body > div.app-side \"Компьютерын батарей82% · цэнэглэж байна8\"",
+   "msg": "a row item is cut by a frame round it: 533 x 421px of its 533 x 532px shows (SR-7)",
+   "fix": "show the row item whole: no frame cutting it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div.wrap > div.app-window > div.app-body > div.app-side \"Компьютерын батарей82% · цэнэглэж байна8\""
+   ]
+  },
+  {
+   "check": "row-lines",
+   "where": "div.wrap > div.app-window > div.app-body > div.app-main \"Утасгүй хулганаUSB dongle Цэнэг72% Эрүүл\"",
+   "msg": "a row item is cut by a frame round it: 746 x 421px of its 746 x 532px shows (SR-7)",
+   "fix": "show the row item whole: no frame cutting it",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "row-lines"
+   ],
+   "wheres": [
+    "div.wrap > div.app-window > div.app-body > div.app-main \"Утасгүй хулганаUSB dongle Цэнэг72% Эрүүл\""
+   ]
+  },
+  {
+   "check": "button-styles",
+   "where": "(one screen)",
+   "msg": "3 button styles on one screen: soft, fill #c6f19d (\"Эх кодыг үзэх\"); pill, fill #dce3d6 (\"RGB унтраалт +12ц\", in a mock); round, fill #ffffff (\"Чихэвч Bluetooth · 15% 15%\", in a mock); the odd one out: \"Чихэвч Bluetooth · 15% 15%\"",
+   "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "button-styles"
+   ],
+   "wheres": [
+    "(one screen)"
+   ]
+  },
+  {
+   "check": "heading-scale",
+   "where": "h2#widget-h \"Нэг цонхонд: жагсаалт ба дэлгэрэнгүй\"",
+   "msg": "h2 headings in 2 sizes, 22px (\"Нэг ажлыг нэг панелаар х\") to 30px (x1.36)",
+   "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "heading-scale"
+   ],
+   "wheres": [
+    "h2#widget-h \"Нэг цонхонд: жагсаалт ба дэлгэрэнгүй\""
+   ]
+  },
+  {
+   "check": "contrast",
+   "where": "div.feature-frag > div.cols > div.mini:nth-of-type(1) > small \"Унтах таймер\"",
+   "msg": "body text over a effect reads at 1.2:1 at its worst tenth (needs 4.5:1), on a busy ground (and 1 more like it: \"80% хязгаар\")",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "div.feature-frag > div.cols > div.mini:nth-of-type(1) > small \"Унтах таймер\""
+   ]
+  },
+  {
+   "check": "sparse",
+   "where": "#steps section.section \"Эх кодоос гурван алхмаар Бэлэн с\"",
+   "msg": "its content fills 42% of its screen; merge it or give it its visual (0.55 is the aim)",
+   "fix": "fill the section or make it a screen shorter",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "sparse"
+   ],
+   "wheres": [
+    "#steps section.section \"Эх кодоос гурван алхмаар Бэлэн с\""
+   ]
+  },
+  {
+   "check": "sparse",
+   "where": "#privacy section.section.ground-inverse \"Мэдээлэл машин дотроо үлдэнэ Vol\"",
+   "msg": "its content fills 38% of its screen; merge it or give it its visual (0.55 is the aim)",
+   "fix": "fill the section or make it a screen shorter",
+   "widths": [
+    1440
+   ],
+   "from": "layout",
+   "ids": [
+    "sparse"
+   ],
+   "wheres": [
+    "#privacy section.section.ground-inverse \"Мэдээлэл машин дотроо үлдэнэ Vol\""
+   ]
+  },
+  {
+   "check": "hero-lines",
+   "where": "section.hero h1",
+   "msg": "the check fills the h1 to 34 characters (this hero's maxChars in heroes.json), not the page's own: it takes 4 lines at 1440, 3 at most",
+   "fix": "the check fills the h1 to this hero's maxChars, not your own: take the next type pairing the deal printed (start.mjs); when the h1 is final and fits, waive it (target: section.hero h1)",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "hero-lines"
+   ],
+   "wheres": [
+    "section.hero h1"
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 24,
+ "at": "2026-11-17T07:00:29.510Z",
+ "openTold": true
+}

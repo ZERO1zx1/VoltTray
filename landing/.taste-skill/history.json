@@ -1,0 +1,35 @@
+{
+  "palettes": [
+    "forest-pale-lime",
+    "forest-pale-lime",
+    "forest-pale-lime",
+    "forest-pale-lime",
+    "forest-pale-lime",
+    "forest-pale-lime"
+  ],
+  "types": [
+    "host",
+    "host",
+    "host",
+    "host",
+    "host",
+    "host"
+  ],
+  "dealt": [
+    "host",
+    "urbanist",
+    "epilogue"
+  ],
+  "moments": [
+    {
+      "id": "iris-opens",
+      "at": "2026-11-15T14:06:51.909Z",
+      "seed": "e19572b6"
+    },
+    {
+      "id": "word-highlight",
+      "at": "2026-11-15T14:06:51.909Z",
+      "seed": "e19572b6"
+    }
+  ]
+}

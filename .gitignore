@@ -8,3 +8,5 @@ out/
 *.log
 screenshot.png
 .DS_Store
+battery.zip
+*.zip
